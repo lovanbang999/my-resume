@@ -160,7 +160,9 @@ h6 {
 .header .profile-img img {
   margin: 15px auto;
   display: block;
-  width: 120px;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
   border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
@@ -718,6 +720,17 @@ section,
   background-color: var(--accent-color);
 }
 
+.skills .dev-icons {
+  list-style: none;
+  font-size: 3rem;
+}
+
+.skills .list-inline-item i {
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+}
+
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
@@ -891,13 +904,13 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# project Section
 --------------------------------------------------------------*/
-.services .service-item {
+.project .service-item {
   position: relative;
 }
 
-.services .service-item .icon {
+.project .service-item .icon {
   background: var(--accent-color);
   display: flex;
   align-items: center;
@@ -910,35 +923,35 @@ section,
   margin-right: 20px;
 }
 
-.services .service-item .icon i {
+.project .service-item .icon i {
   color: var(--contrast-color);
   font-size: 24px;
   line-height: 0;
 }
 
-.services .service-item:hover .icon {
+.project .service-item:hover .icon {
   background: var(--surface-color);
 }
 
-.services .service-item:hover .icon i {
+.project .service-item:hover .icon i {
   color: var(--accent-color);
 }
 
-.services .service-item .title {
+.project .service-item .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.services .service-item .title a {
+.project .service-item .title a {
   color: var(--heading-color);
 }
 
-.services .service-item .title a:hover {
+.project .service-item .title a:hover {
   color: var(--accent-color);
 }
 
-.services .service-item .description {
+.project .service-item .description {
   line-height: 24px;
   font-size: 14px;
 }
@@ -1205,13 +1218,13 @@ section,
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
-.service-details .services-list {
+.service-details .project-list {
   padding: 10px 30px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   margin-bottom: 20px;
 }
 
-.service-details .services-list a {
+.service-details .project-list a {
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
@@ -1221,17 +1234,17 @@ section,
   transition: 0.3s;
 }
 
-.service-details .services-list a.active {
+.service-details .project-list a.active {
   color: var(--heading-color);
   font-weight: 700;
   border-color: var(--accent-color);
 }
 
-.service-details .services-list a:hover {
+.service-details .project-list a:hover {
   border-color: var(--accent-color);
 }
 
-.service-details .services-img {
+.service-details .project-img {
   margin-bottom: 20px;
 }
 
